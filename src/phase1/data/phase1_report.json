@@ -1,0 +1,13 @@
+{
+  "raw_rows": 51717,
+  "rows_after_cleaning": 12137,
+  "rows_query_ready": 0,
+  "rows_removed_in_cleaning": 39580,
+  "rows_removed_by_quality_filter": 12137,
+  "deduplicated_rows": 39580,
+  "output_files": {
+    "csv": "phase1\\data\\restaurants_query_ready.csv",
+    "parquet": "phase1\\data\\restaurants_query_ready.parquet",
+    "schema_mapping": "phase1\\data\\schema_mapping.json"
+  }
+}

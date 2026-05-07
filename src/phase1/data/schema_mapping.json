@@ -1,0 +1,7 @@
+{
+  "restaurant_name": "name",
+  "location": "location",
+  "cuisine": "cuisines",
+  "estimated_cost": null,
+  "rating": null
+}

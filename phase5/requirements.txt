@@ -1,0 +1,24 @@
+# Phase 5: Response Assembly and Presentation Layer Dependencies
+# Core dependencies (minimal)
+# Note: Phase 5 primarily uses Python standard library
+
+# Optional dependencies for enhanced functionality
+jinja2>=3.0.0          # For advanced template rendering
+rich>=13.0.0           # For enhanced CLI output formatting
+markdown>=3.4.0        # For markdown processing
+pygments>=2.10.0       # For syntax highlighting in HTML
+
+# Web-related dependencies (if serving HTML)
+fastapi>=0.68.0        # Optional: For web API serving
+uvicorn>=0.15.0        # Optional: For web server
+
+# Data handling
+pandas>=1.3.0          # Optional: For data processing
+pydantic>=1.8.0        # Optional: For data validation
+
+# Development dependencies (uncomment for development)
+# pytest>=6.0.0
+# pytest-asyncio>=0.15.0
+# black>=21.0.0
+# flake8>=3.9.0
+# mypy>=0.910
