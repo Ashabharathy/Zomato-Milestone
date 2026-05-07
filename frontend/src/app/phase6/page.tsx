@@ -28,6 +28,9 @@ import { RealTimeMetrics } from '../../components/phase6/metrics/RealTimeMetrics
 import { ExperimentCard } from '../../components/phase6/experiments/ExperimentCard';
 import { AlertPanel } from '../../components/phase6/monitoring/AlertPanel';
 
+// Import theme
+import { colors } from '../../theme/colors';
+
 // Import types and services
 import { Phase6Dashboard, MetricType, ExperimentStatus } from '../../types/phase6';
 import { dashboardApi } from '../../services/phase6';
@@ -49,6 +52,19 @@ export default function Phase6DashboardPage() {
   const [dashboard, setDashboard] = useState<Phase6Dashboard | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Apply theme colors to components
+  const getThemeColor = (colorKey: keyof typeof colors) => {
+    const colorMap = {
+      primary: colors.primary.main,
+      secondary: colors.secondary.main,
+      success: colors.semantic.success,
+      warning: colors.semantic.warning,
+      error: colors.semantic.error,
+      info: colors.semantic.info,
+    };
+    return colorMap[colorKey] || colors.text.primary;
+  };
 
   useEffect(() => {
     fetchDashboard();
